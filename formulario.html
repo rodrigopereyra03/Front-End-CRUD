@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Front End</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <h1>Product Registration</h1>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <form id="formAdd" method="POST">
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Lamp"
+                    class="formbold-form-input"
+                    />
+                    <label for="name" class="formbold-form-label"> Product name </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="description"
+                    id="description"
+                    placeholder="Iluminator"
+                    class="formbold-form-input"
+                    />
+                    <label for="description" class="formbold-form-label"> Description </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="number"
+                    name="price"
+                    id="price"
+                    placeholder="100"
+                    class="formbold-form-input"
+                    />
+                    <label for="price" class="formbold-form-label"> Price </label>
+                </div>
+                <div>
+                    <input
+                    type="number"
+                    name="amount"
+                    id="amount"
+                    placeholder="1"
+                    class="formbold-form-input"
+                    />
+                    <label for="amount" class="formbold-form-label"> Amount </label>
+                </div>
+              </div>
+              
+              <div class="btn-container">
+              <button id="btnRegister" class="formbold-btn">
+                  Register
+              </button>
+              </div>
+          </form>
+          <span id="msgFormAdd" class="msg-error"></span>
+        </div>
+      </div>
+
+      <table id="IdTabla">
+        <thead>
+          <tr>
+            <th colspan="6">Inventory</th>
+          </tr>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <!-- <div class="modal" id="modalConfirm">
+        <div class="form-content">
+          <div class="btn-close-form" onclick="closeModalConfirm()">X</div>
+          <div class="form-body">
+            <h3>Eliminar</h3>
+            <p>¿Estas seguro de eliminar el producto?</p>
+          </div>
+          <div class="form-footer">
+              <button type="button" id="btnNo">No</button>
+              <button type="button" id="btnSi">Si</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert" id="alert">Algo sucedió..</div>
+
+      <div id="productsList" class="products-list"></div> -->
+
+      <div id="formulario">
+      <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <form method="POST">
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name1"
+                    placeholder="Lamp"
+                    class="formbold-form-input"
+                    />
+                    <label for="name" class="formbold-form-label"> Product name </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="description"
+                    id="description1"
+                    placeholder="Iluminator"
+                    class="formbold-form-input"
+                    />
+                    <label for="description" class="formbold-form-label"> Description </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="number"
+                    name="price"
+                    id="price1"
+                    placeholder="100"
+                    class="formbold-form-input"
+                    />
+                    <label for="price" class="formbold-form-label"> Price </label>
+                </div>
+                <div>
+                    <input
+                    type="number"
+                    name="amount"
+                    id="amount1"
+                    placeholder="1"
+                    class="formbold-form-input"
+                    />
+                    <label for="amount" class="formbold-form-label"> Amount </label>
+                </div>
+              </div>
+              
+              <div class="btn-container">
+                <button id="btnCancelar" class="formbold-btn">
+                  Cancel
+              </button>
+              <button id="btnModificar" class="formbold-btn">
+                  Edit
+              </button>
+              </div>
+          </form>
+        </div>
+      </div>
+      </div>
+
+
+
+      <script src="form.js"></script>
+</body>
+</html>
